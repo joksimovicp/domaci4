@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Scuderia Ferrari</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="icon" href="img/favicon1.ico">
+		<link href="css/animate.css" rel="stylesheet">
+
+
+			<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+					
+			<script>
+			    $( function() {
+			    $( "#datepicker" ).datepicker({
+			      	changeMonth: true,
+			      	changeYear: true,
+			      	yearRange: "1900:2016",
+			    	});
+			  	} );
+			</script> 
+			<script>
+			    $(function() {
+				  	$("#next1").click(function(){
+			      		if (document.forms[0].email.value=='') {
+			      		alert("Email address missing!");
+			      		document.forms[0].mail.focus();}
+			      		else {
+			        	if(document.forms[0].email.value.indexOf('@') == -1) {
+			    		alert("Incorrect email address format!");
+			    		document.forms[0].mail.focus();
+			    
+			    		} else {
+			    		if (document.forms[0].pass.value=='') {
+			    		alert("Please enter your password");
+			    		document.forms[0].ime.focus();
+			  			} else {
+			    		if ($("#pass").val()!=$("#passrepeat").val()){
+			      		alert("Passwords don't match!")
+			    		}else{
+			    
+			   
+						$("#fieldset1").hide();
+						$("#fieldset2" ).show();
+							}}}}});
+						
+			    		$("#previous2").click(function(){
+				  		$("#fieldset1").show();
+				  		$("#fieldset2").hide();
+							});
+			    		
+			    		$("#subm").click(function(){
+			      		alert("You have signed up successfully.")
+			    		});
+			   	});
+			</script>
+			<script type="text/javascript">
+			  function validacija() {
+			    if (document.forms[0].email.value=='') {
+			      alert("Email address missing!");
+			      document.forms[0].mail.focus();
+			      
+			    } else {
+			    
+			  }};
+			</script>
+			<script>
+			  $(function() {
+			        $( "#datepicker" ).datepicker({
+			            dateFormat : 'mm/dd/yy',
+			            changeMonth : true,
+			            changeYear : true,
+			            yearRange: '-100y:c+nn',
+			            maxDate: '-1d'
+			        });
+			    });
+			</script>
+
+</head>
+<body>
+	
+	<div class="container-fluid">
+			<div class="row" >
+				<div class="col-md-8">
+					<img class="imgbanner" src="img/sfbanner.jpg">
+				</div>
+				<!-- <div class="col-md-4">
+					<a href="https://www.formula1.com/" target="_blank"><img class="social" src="img/f1.png"></a>
+                    <a href="https://twitter.com/ScuderiaFerrari" target="_blank"><img class="social" src="img/twit.png"></a>
+                    <a href="https://www.instagram.com/scuderiaferrari/?hl=sr" target="_blank"><img class="social" src="img/inst.png"></a>
+                    <a href="https://www.facebook.com/ScuderiaFerrari/" target="_blank"><img class="social" src="img/face.png"></a><br>
+                    <img id="it" src="img/italia.jpg">
+
+				</div> -->
+			</div>
+			<div class="row">
+				<nav class="navbar navbar-inverse" style="margin-bottom:0px">
+					<div class="container-fluid">
+						<div class="navbar-header">
+							<img id="logo" src="img/logo.png" >
+						</div>
+						<ul class="nav navbar-nav">
+							<li><a href="index.html"><span class="glyphicon glyphicon-home"></span></a></li>
+							<li><a href="drivers.html">Drivers</a></li>
+							<li><a href="cars.html">Cars</a></li>
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+							<li class="active"><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+							<li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+			<div class="row formBack" >
+				<div class="col-md-4 hidden-xs side"">
+				</div>
+				<div class="col-md-4">
+					<form id="msform">
+					  	<fieldset id="fieldset1">
+						    <h2 class="fs-title">Create your account</h2>
+						    <input type="email" name="email" placeholder="Email" id="email" />
+						    <input type="password" name="pass" placeholder="Password" id="pass" />
+						    <input type="password" name="cpass" placeholder="Confirm Password" id="passrepeat" />
+						    <input type="button" name="next" class="next action-button" value="Next" id="next1"  />
+						</fieldset>
+						<fieldset id="fieldset2" style="display:none">
+						 	<h2 class="fs-title">Personal Details</h2>
+						   	<input type="text" name="fname" placeholder="First Name" id="FirstName"	 />
+						   	<input type="text" name="lname" placeholder="Last Name" id="lastName" />
+							<div class="row" id="genderForm">
+						   	 	<p>Gender</p>
+						   	 	<div class="col-md-6"><input type="radio" name="gender" value="male" checked > Male</div>
+						   	 	<div class="col-md-6"> <input type="radio" name="gender" value="female"> Female</div>
+						   	</div>
+							<input type="text" id="datepicker" value="Date of Birth">
+						  	<input type="submit" name="submit" class="submit action-button" value="Submit" id="subm" /> 
+						  	<input type="button" name="previous" class="previous action-button" value="Previous" id="previous2" />
+					    
+					  	</fieldset>
+
+					  
+					</form>
+
+				</div>
+				<div class="col-md-4 hidden-xs side">
+				</div>
+			</div>
+	</div>
+	<div class="footer">
+		<script>
+			var today = new Date();
+			var dd = today.getDate();
+			var mm = today.getMonth()+1; //January is 0!
+			var yyyy = today.getFullYear();
+
+			if(dd<10) {
+			    dd='0'+dd
+			} 
+
+			if(mm<10) {
+			    mm='0'+mm
+			} 
+
+			today = dd+'/'+mm+'/'+yyyy;
+			document.write(today);
+		</script>
+		
+  		<p>Made by Joksimovic Petar</p>
+	</div>
+
+	<div id="myModal" class="modal">
+		<div class="modal-content">
+			<div class="modal-body">
+				<p>You are viewing in offline mode</p>
+				<span class="close">&times;</span>
+			</div>
+		</div>
+	</div>
+	<script src="js/offlineMode.js"></script>
+	<script>window.addEventListener("load", () => {
+			function handleNetworkChange(event) {
+				var modal = document.getElementById("myModal");
+
+				if (navigator.onLine) {
+					modal.style.display = "none";
+				} else {
+					modal.style.display = "block";
+				}
+			}
+
+			window.addEventListener("online", handleNetworkChange);
+			window.addEventListener("offline", handleNetworkChange);
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Scuderia Ferrari</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="icon" href="img/favicon1.ico">
+		<link href="css/animate.css" rel="stylesheet">
+
+</head>
+<body>
+	
+	<div class="container-fluid">
+			<div class="row" >
+				<div class="col-md-8">
+					<img class="imgbanner" src="img/sfbanner.jpg">
+				</div>
+				<!-- <div class="col-md-4">
+					<a href="https://www.formula1.com/" target="_blank"><img class="social" src="img/f1.png"></a>
+                    <a href="https://twitter.com/ScuderiaFerrari" target="_blank"><img class="social" src="img/twit.png"></a>
+                    <a href="https://www.instagram.com/scuderiaferrari/?hl=sr" target="_blank"><img class="social" src="img/inst.png"></a>
+                    <a href="https://www.facebook.com/ScuderiaFerrari/" target="_blank"><img class="social" src="img/face.png"></a><br>
+                    <img id="it" src="img/italia.jpg">
+
+				</div> -->
+			</div>
+			<div class="row">
+				<nav class="navbar navbar-inverse" style="margin-bottom:0px">
+					<div class="container-fluid">
+						<div class="navbar-header">
+							<img id="logo" src="img/logo.png" >
+						</div>
+						<ul class="nav navbar-nav">
+							<li><a href="index.html"><span class="glyphicon glyphicon-home"></span></a></li>
+							<!-- <li><a href="history.html">History</a></li> -->
+							<li><a href="drivers.html">Drivers</a></li>
+							<li><a href="cars.html">Cars</a></li>
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+							<li class="active"><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+			<div  class="row formBack" >
+				<div class="col-md-4">
+					
+				</div>
+				<div class="col-md-4">
+					<form onsubmit="return validacija()" id="msform">
+    					<fieldset id="fieldset1">
+				      		<h2 class="fs-title">Log In</h2>
+				      		<input type="email" name="email" placeholder="Email" id="logInEmail" required />
+				      		<input type="password" name="pass" placeholder="Password" id="logInPass" required />
+				      		<input type="submit" name="submit" class="submit action-button" value="Submit" />
+				    	</fieldset>
+					</form>
+
+				</div>
+				<div class="col-md-4">
+					
+				</div>
+			</div>
+	</div>
+	<div class="footer">
+		<script>
+			var today = new Date();
+			var dd = today.getDate();
+			var mm = today.getMonth()+1; //January is 0!
+			var yyyy = today.getFullYear();
+
+			if(dd<10) {
+			    dd='0'+dd
+			} 
+
+			if(mm<10) {
+			    mm='0'+mm
+			} 
+
+			today = dd+'/'+mm+'/'+yyyy;
+			document.write(today);
+		</script>
+		
+  		<p>Made by Joksimovic Petar</p>
+	</div>
+<script>
+    function validacija() {
+  alert("You have logged in successfully");
+    };
+  </script>
+
+
+	<div id="myModal" class="modal">
+		<div class="modal-content">
+		
+			<div class="modal-body">
+				<p>You are viewing in offline mode</p>
+				<span class="close">&times;</span>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/offlineMode.js"></script>
+	<script>window.addEventListener("load", () => {
+			function handleNetworkChange(event) {
+				var modal = document.getElementById("myModal");
+
+				if (navigator.onLine) {
+					modal.style.display = "none";
+				} else {
+					modal.style.display = "block";
+				}
+			}
+			window.addEventListener("online", handleNetworkChange);
+			window.addEventListener("offline", handleNetworkChange);
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Scuderia Ferrari</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="icon" href="img/favicon1.ico">
+		<link href="css/animate.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" media="all" href="css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" media="all" href="dist/css/jgallery.min.css?v=1.6.4" />
+		<script type="text/javascript" src="dist/js/jquery-2.0.3.min.js"></script>
+		<script type="text/javascript" src="dist/js/jgallery.min.js?v=1.6.4"></script>
+		<script type="text/javascript" src="dist/js/touchswipe.min.js"></script>
+</head>
+<body>
+	<script src="js/indexScripts.js"></script>
+	<script type="text/javascript">
+		$(document).on('click','#car1', function(){
+			$('#gallery3').hide();
+			$('#gallery2').hide();
+			$('#gallery1').show();
+
+
+		});
+		$(document).on('click','#car2', function(){
+			$('#gallery1').hide();
+			$('#gallery3').hide();
+			$('#gallery2').show();
+
+
+		});
+		$(document).on('click','#car3', function(){
+			$('#gallery1').hide();
+			$('#gallery2').hide();
+			$('#gallery3').show();
+
+
+		});
+	</script>
+	<script type="text/javascript">
+		$( function(){
+    	$( "#gallery11" ).jGallery( {
+        "transitionBackward":"scaleDown_moveFromLeft",
+        "transitionCols":"1",
+        "transitionRows":"1",
+        "thumbnailsPosition":"bottom",
+        "thumbType":"image",
+        "backgroundColor":"#000000",
+        "textColor":"#ffffff",
+        "mode":"standard"
+    		} );
+		} );
+
+	</script>
+		<script type="text/javascript">
+		$( function(){
+    	$( "#gallery22" ).jGallery( {
+        "transitionBackward":"scaleDown_moveFromLeft",
+        "transitionCols":"1",
+        "transitionRows":"1",
+        "thumbnailsPosition":"bottom",
+        "thumbType":"image",
+        "backgroundColor":"#000000",
+        "textColor":"#ffffff",
+        "mode":"standard"
+    		} );
+		} );
+
+	</script>
+
+	<script type="text/javascript">
+		$( function(){
+    	$( "#gallery33" ).jGallery( {
+        "transitionBackward":"scaleDown_moveFromLeft",
+        "transitionCols":"1",
+        "transitionRows":"1",
+        "thumbnailsPosition":"bottom",
+        "thumbType":"image",
+        "backgroundColor":"#000000",
+        "textColor":"#ffffff",
+        "mode":"standard"
+    		} );
+		} );
+
+	</script>
+
+
+
+	<div class="container-fluid">
+			<div class="row" >
+				<div class="col-md-8">
+					<img class="imgbanner" src="img/sfbanner.jpg">
+				</div>
+				<!-- <div class="col-md-4">
+					<a href="https://www.formula1.com/" target="_blank"><img class="social" src="img/f1.png"></a>
+                    <a href="https://twitter.com/ScuderiaFerrari" target="_blank"><img class="social" src="img/twit.png"></a>
+                    <a href="https://www.instagram.com/scuderiaferrari/?hl=sr" target="_blank"><img class="social" src="img/inst.png"></a>
+                    <a href="https://www.facebook.com/ScuderiaFerrari/" target="_blank"><img class="social" src="img/face.png"></a><br>
+                    <img id="it" src="img/italia.jpg">
+
+				</div> -->
+			</div>
+			<div class="row">
+				<nav class="navbar navbar-inverse" style="margin-bottom:0px">
+					<div class="container-fluid">
+						<div class="navbar-header">
+							<img id="logo" src="img/logo.png" >
+						</div>
+						<ul class="nav navbar-nav">
+							<li><a href="index.html"><span class="glyphicon glyphicon-home"></span></a></li>
+							<li><a href="drivers.html">Drivers</a></li>
+							<li class="active"><a href="cars.html">Cars</a></li>
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+							<li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+			<div id="dv" class="row" >
+				<div  class="col-md-3 cars " style="height: 600px">
+					<ul class="nav nav-pills nav-stacked">
+        			<li id="car1"><a href="#car1">Ferrari SF70-H</a></li>
+        			<li id="car2"><a href="#car2">Ferrari SF16-H</a></li>
+        			<li id="car3"><a href="#car3">Ferrari SF15-T</a></li>
+      				</ul>
+				</div>
+				<div class="col-md-9 myBox carInfo" style="overflow-y:scroll; height: 600px">
+					<div id="gallery1">
+						<div class="row">
+							
+							<div class="col-md-12">
+								<div id="gallery11" >
+    
+								    <a href="img/sf70h1.jpg"><img src="img/sf70h1.jpg" alt="SF70-H" /></a>
+								    <a href="img/sf70h2.jpg"><img src="img/sf70h2.jpg" alt="SF70-H" /></a>
+								    
+								</div>
+							</div>
+							
+						</div>
+					</div>
+					<div id="gallery2" >
+						<div class="row">
+							
+							<div class="col-md-12">
+								<div id="gallery22">
+    
+								    <a href="img/sf16h1.jpg"><img src="img/sf16h1.jpg" alt="SF16-H" /></a>
+								    <a href="img/sf16h2.jpg"><img src="img/sf16h2.jpg" alt="SF16-H" /></a>
+								   					    
+								</div>
+							</div>
+							
+						</div>
+					</div>
+					<div id="gallery3" >
+						<div class="row">
+							
+							<div class="col-md-12">
+								<div id="gallery33">
+    
+								    <a href="img/sf15t1.jpg"><img src="img/sf15t1.jpg" alt="SF15-T" /></a>
+								    <a href="img/sf15t2.jpg"><img src="img/sf15t2.jpg" alt="SF15-T" /></a>
+								    
+								</div>
+							</div>
+							
+						</div>
+					</div>
+
+				</div>
+				
+			</div>
+	</div>
+	<div class="footer">
+		<script>
+			var today = new Date();
+			var dd = today.getDate();
+			var mm = today.getMonth()+1; //January is 0!
+			var yyyy = today.getFullYear();
+
+			if(dd<10) {
+			    dd='0'+dd
+			} 
+
+			if(mm<10) {
+			    mm='0'+mm
+			} 
+
+			today = dd+'/'+mm+'/'+yyyy;
+			document.write(today);
+		</script>
+		
+  		<p>Made by Joksimovic Petar</p>
+	</div>
+
+
+	<!-- The Modal -->
+	<div id="myModal" class="modal">
+
+		<!-- Modal content -->
+		<div class="modal-content">
+		
+			<div class="modal-body">
+				<p>You are viewing in offline mode</p>
+				<span class="close">&times;</span>
+			</div>
+			
+		</div>
+
+	</div>
+
+	<script src="js/offlineMode.js"></script>
+
+	<script>window.addEventListener("load", () => {
+			function handleNetworkChange(event) {
+
+				if (navigator.onLine) {
+					var modal = document.getElementById("myModal");
+					modal.style.display = "none";
+				} else {
+					var modal = document.getElementById("myModal");
+					modal.style.display = "block";
+
+				}
+			}
+
+			window.addEventListener("online", handleNetworkChange);
+			window.addEventListener("offline", handleNetworkChange);
+		});
+	</script>
+</body>
+</html>

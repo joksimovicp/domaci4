@@ -1,0 +1,21 @@
+{
+    "name": "Treci Domaci Rad",
+    "short_name": "Domaci",
+    "theme_color": "#2d646a",
+    "background_color": "#394753",
+    "display": "standalone",
+    "scope": "/",
+    "start_url": "index.html",
+    "icons": [
+        {
+            "src": "img/tradition.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "images/tradition.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+  }

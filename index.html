@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Scuderia Ferrari</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="icon" href="img/favicon1.ico">
+	<meta name="theme-color" content="#2196F3">
+	<link rel="apple-touch-icon" href="img/logo.png">
+	<link rel="manifest" href="manifest.json">
+	<script src="index.js"></script>
+
+</head>
+
+<body>
+	<script src="js/indexScripts.js"></script>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-8">
+				<img class="imgbanner" src="img/sfbanner.jpg">
+			</div>
+			<!-- <div class="col-md-4">
+					<a href="https://www.formula1.com/" target="_blank"><img class="social" src="img/f1.png"></a>
+                    <a href="https://twitter.com/ScuderiaFerrari" target="_blank"><img class="social" src="img/twit.png"></a>
+                    <a href="https://www.instagram.com/scuderiaferrari/?hl=sr" target="_blank"><img class="social" src="img/inst.png"></a>
+                    <a href="https://www.facebook.com/ScuderiaFerrari/" target="_blank"><img class="social" src="img/face.png"></a><br>
+                    <img id="it" src="img/italia.jpg">
+
+				</div> -->
+		</div>
+		<div class="row">
+			<nav class="navbar navbar-inverse" style="margin-bottom:0px">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<img id="logo" src="img/logo.png">
+					</div>
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span></a></li>
+						<li><a href="drivers.html">Drivers</a></li>
+						<li><a href="cars.html">Cars</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+						<li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<div class="row" style="height: 800px">
+			<div class="col-md-3 hidden-xs side">
+				<img class="homeImg" src="img/seb.jpg">
+			</div>
+			<div class="col-md-6 myBox homeNews" style="overflow-y:scroll">
+				<div id="article" style="display:none">
+				</div>
+				<div id="newsLetter">
+					<div class="row newsRow">
+						<div class="col-md-5">
+							<img src="img/brazil.jpg">
+						</div>
+						<div class="col-md-7">
+							Brazilian Grand Prix - Making the best of a dry Friday<br>
+
+							<button class="forward" id="news1">Read more</button>
+						</div>
+					</div>
+					<div class="row newsRow">
+						<div class="col-md-5">
+							<img src="img/brazil1.jpg">
+						</div>
+						<div class="col-md-7">
+							Brazilian Grand Prix - Friday’s free practice concludes in Interlagos<br>
+							<button class="forward" id="news2">Read more</button>
+						</div>
+					</div>
+					<div class="row newsRow">
+						<div class="col-md-5">
+							<img src="img/brazil2.jpg">
+						</div>
+						<div class="col-md-7">
+							Brazilian Grand Prix - Free Practice gets underway at Interlagos<br>
+							<button class="forward" id="news3">Read more</button>
+						</div>
+					</div>
+					<div class="row newsRow">
+						<div class="col-md-5">
+							<img src="img/mexico1.jpg">
+						</div>
+						<div class="col-md-7">
+							Mexican Grand Prix - Kimi’s message to the fans<br>
+							<button class="forward" id="news4">Read more</button>
+						</div>
+					</div>
+					<div class="row newsRow">
+						<div class="col-md-5">
+							<img src="img/mexico2.jpg">
+						</div>
+						<div class="col-md-7">
+							Mexican Grand Prix - Seb comments about the race<br>
+							<button class="forward" id="news5">Read more</button>
+						</div>
+					</div>
+					<div class="row newsRow">
+						<div class="col-md-5">
+							<img src="img/mexico3.jpg">
+						</div>
+						<div class="col-md-7">
+							Mexican Grand Prix - Kimi comments about the race<br>
+							<button class="forward" id="news6">Read more</button>
+						</div>
+					</div>
+					<div class="row newsRow">
+						<div class="col-md-5">
+							<img src="img/maurizio.jpg">
+						</div>
+						<div class="col-md-7">
+							Mexican Grand Prix - Maurizio comments about the race<br>
+							<button class="forward" id="news7">Read more</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 hidden-xs side">
+				<img class="homeImg" src="img/kimi.jpg">
+			</div>
+		</div>
+	</div>
+
+	<div id="myModal" class="modal">
+		<div class="modal-content">
+			<div class="modal-body">
+				<p>You are viewing in offline mode</p>
+				<span class="close">&times;</span>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/offlineMode.js"></script>
+	<script>window.addEventListener("load", () => {
+			function handleNetworkChange(event) {
+				var modal = document.getElementById("myModal");
+
+				if (navigator.onLine) {
+					modal.style.display = "none";
+				} else {
+					modal.style.display = "block";
+				}
+			}
+
+			window.addEventListener("online", handleNetworkChange);
+			window.addEventListener("offline", handleNetworkChange);
+		});
+	</script>
+
+</body>
+
+</html>

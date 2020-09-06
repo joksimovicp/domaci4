@@ -1,0 +1,554 @@
+html{
+	background-color: rgb(34,34,34);
+}
+#logo{
+	height: 50px;
+	width: 70px;
+	margin-right: 5px;
+}
+
+
+
+@media only screen and (max-width: 500px) {
+    .imgbanner{
+	width: 100%;
+	}
+
+	 .newsRow img{
+ 	width: 150px;
+ 	height: auto;
+ }
+
+
+}
+
+.col-md-3{
+	padding: 0px;
+	margin:0px;
+}
+
+nav{
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+.homeImg{
+	width: 100%;
+	height: 100%;
+}
+
+.homeNews{
+	height: 100%;
+	background-color: rgb(34,34,34);
+}
+
+.side{
+	height: 100%;
+}
+
+/* The Modal (background) */
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+	-webkit-animation-name: fadeIn; /* Fade in the background */
+	-webkit-animation-duration: 0.4s;
+	animation-name: fadeIn;
+	animation-duration: 0.4s
+  }
+  
+  /* Modal Content */
+  .modal-content {
+	position: fixed;
+	bottom: 0;
+	background-color: #fefefe;
+	width: 100%;
+	-webkit-animation-name: slideIn;
+	-webkit-animation-duration: 0.4s;
+	animation-name: slideIn;
+	animation-duration: 0.4s
+  }
+  
+  /* The Close Button */
+  .close {
+	color: white;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+  }
+  
+  /* .modal-header {
+	padding: 2px 16px;
+	background-color: #5cb85c;
+	color: white;
+  }
+   */
+  .modal-body {padding: 2px 16px;
+text-align: center;}
+  
+  /* .modal-footer {
+	padding: 2px 16px;
+	background-color: #5cb85c;
+	color: white;
+  } */
+  
+  /* Add Animation */
+  @-webkit-keyframes slideIn {
+	from {bottom: -300px; opacity: 0} 
+	to {bottom: 0; opacity: 1}
+  }
+  
+  @keyframes slideIn {
+	from {bottom: -300px; opacity: 0}
+	to {bottom: 0; opacity: 1}
+  }
+  
+  @-webkit-keyframes fadeIn {
+	from {opacity: 0} 
+	to {opacity: 1}
+  }
+  
+  @keyframes fadeIn {
+	from {opacity: 0} 
+	to {opacity: 1}
+  }
+
+.footer{
+	font-size: 20px;
+	background-color: rgb(34,34,34);
+	padding-top: 5px;
+	padding-right: 20px;
+	color: white;
+	padding-left: 20px; 
+
+}
+
+.footer p{
+	color: white;
+	float: right;
+}
+
+//scroll
+
+.myBox {
+border: none;
+padding: 5px;
+font: 24px/36px sans-serif;
+overflow: scroll;
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+width: 12px;
+height: 12px;
+background-color: white
+}
+
+::-webkit-scrollbar-track {
+border: 1px solid transparent;
+border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+background: rgb(204,0,0);  
+border-radius: 10px;
+}
+
+ .newsRow{
+ 	
+ 	margin: 10px;
+ }
+
+ .newsRow img{
+ 	width: 100%;
+ 	height: auto;
+ }
+
+.back{
+ 	height: 30px;
+ 	border-radius: 12px;
+ 	width: 60px;
+ 	margin-top: 30px;
+ 	background-color: rgb(204,0,0);
+ 	color:white;
+ }
+  .back1{
+ 	height: 30px;
+ 	border-radius: 12px;
+ 	width: 60px;
+ 	margin-top: 30px;
+ 	background-color: rgb(204,0,0);
+ 	color:white;
+ }
+
+ #article{
+ 	padding-top: 50px;
+ 	color: white;
+ }
+
+.slika{
+	
+	width:300px;
+	height: auto;
+	margin:20px;
+
+
+}
+
+.slika1{
+	border: 4px solid rgb(204,0,0);
+	width:250px;
+	height: auto;
+	margin-top: 50px;
+	margin-right: 15px;
+	margin-left: 15px;
+	margin-bottom:15px;
+	border-radius: 12px;
+}
+
+.articleHeadLine{
+	font-size: 3rem;
+	color:rgb(34,34,34);
+	background-color: white;
+	border-radius: 12px;
+	padding:10px;
+	padding-bottom: 60px;
+	margin-bottom: 40px;
+}
+
+.articleText{
+	font-size: 2rem;
+	color:white;
+	border-radius: 12px;
+}
+
+.col-md-7 {
+	background-color: white;
+	color: black;
+	font-size: 20px;
+	border-radius: 12px;
+}
+
+.forward{
+	border-radius: 12px;
+	font-size: 15px;
+    height: 30px;
+ 	width: 110px;
+ 	color: white;
+ 	background-color: rgb(204,0,0);
+}
+
+
+.social {
+  height: 40px;
+  float: right;
+  padding-right: 10px;
+  padding-left: 15px;
+  padding-top: 3px;
+  padding-bottom: 1px;
+}
+
+#it{
+width:280px;
+height: 30px;
+float: right;
+border-radius: 12px;
+}
+
+#sadrzaj {
+    width: 100%;
+    border-radius: 12px;
+    font-size: 20px;
+
+
+}
+
+#sadrzaj a {
+	background-color: rgb(204,0,0);
+   	color: white;
+   	border-radius: 12px;
+}
+
+#sadrzaj a:hover {
+	background-color: rgb(34,34,34);
+}
+
+.historyTab{
+	height: 100%;
+  	background-color: rgba(34,34,34,0.9);
+}
+
+#ht{
+	background-image: url('../img/sf2007.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.tab-ferrari {
+background-color: rgba(34, 34, 34,0);
+  color: #eff0f2;
+  padding: 10px 10px 10px;
+  margin-top: 10px;
+}
+
+#era{
+	width: 300px;
+	height: auto;
+	float: left;
+	align: left;
+	margin-right: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 0px;
+}
+
+#dv{
+	background-image: url('../img/carsback.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.teamInfo{
+	height: 100%;
+	background-color: rgba(34,34,34,0.8);
+}
+
+.teamSel{
+	height: 100%;
+	background-color: rgba(204,0,0,0.8);
+}
+
+.teamSel a {
+	background-color: rgb(204,0,0);
+   	color: white;
+   	border-radius: 12px;
+   	font-size: 20px;
+   	margin-top: 40px;
+   	text-align: center;
+   	width: 75%;
+   	margin-left: 50px;
+}
+
+.teamSel a:hover {
+	color: white;
+	background-color: rgb(34,34,34)!important;
+}
+
+
+#teamBig img{
+	margin-top: 50px;
+}
+
+.profileHeadLine{
+	font-size: 2rem;
+	color:rgb(34,34,34);
+	background-color: rgba(255,255,255,0.7);
+	border-radius: 12px;
+	border: 4px solid rgb(204,0,0);
+	text-align: center;
+}
+
+.main{
+	font-size: 4rem!important;
+	border: 4px solid rgb(204,0,0);
+	margin-top: 40px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.driverText{
+	font-size: 2rem;
+	color:rgb(34,34,34);
+	border-radius: 12px;
+	background-color: rgba(255,255,255,0.7);
+	border: 4px solid rgb(204,0,0);
+	margin: 20px;
+	padding: 30px;
+}
+
+.cars{
+	height: 100%;
+	background-color: rgba(204,0,0,0.8);
+}
+
+.cars a {
+	background-color: rgb(204,0,0);
+   	color: white;
+   	border-radius: 12px;
+   	font-size: 20px;
+   	margin-top: 40px;
+   	text-align: center;
+   	width: 75%;
+   	margin-left: 50px;
+   	border: 2px solid white;
+}
+.cars a:hover {
+	color: white;
+	background-color: rgb(34,34,34)!important;
+}
+
+.carInfo{
+	height: 100%;
+	background-color: rgba(34,34,34,0.8);
+}
+
+
+/*form styles*/
+#msform {
+  width: 100%;
+  height: 100%;
+  margin: 10px auto;
+  text-align: center;
+  position: relative;
+  margin-top: 100px;
+  margin-bottom: 100px;
+
+
+}
+#msform fieldset {
+  background: rgb(34,34,34);
+  border: 4px solid rgb(204,0,0);
+  border-radius: 12px;
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+  padding: 20px 30px;
+  box-sizing: border-box;
+  width: 80%;
+  margin: 0 10%;
+  opacity: 0.9;
+  position: relative;
+}
+
+
+/*inputs*/
+#msform input, #msform textarea {
+  padding: 15px;
+  border: 2px solid red;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: montserrat;
+  color: #2C3E50;
+  font-size: 20px;
+}
+/*buttons*/
+#msform .action-button {
+  width: 50%;
+  font-size: 15px;
+  background: rgb(204,0,0);
+  font-weight: bold;
+  color: white;
+  border: 0 none;
+  border-radius: 12px;
+ /* cursor: pointer;*/
+  padding: 10px 10px;
+  margin: 10px 5px;
+  float: center;
+  align-items: center;
+}
+#msform .action-button:hover, #msform .action-button:focus {
+  box-shadow: 0 0 0 2px white, 0 0 0 3px white;
+}
+/*isticanje polja*/
+  #email:hover, #email:focus, #pass:hover, #pass:focus,
+  #passrepeat:hover, #passrepeat:focus, #FirstName:hover, #FirstName:focus,
+  #lastName:hover, #lastName:focus, #bio:hover, #bio:focus,
+  #datepicker:hover, #datepicker:focus, #logInEmail:hover, #logInEmail:focus,
+  #logInPass:hover, #logInPass:focus {
+  border-color: green;
+  border-width: 3px;
+}
+/*headings*/
+.fs-title {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.ui-datepicker-header{
+  background-color: #494949; 
+  color:white;
+}
+.ui-datepicker-prev{
+  display: none;
+}
+.ui-datepicker-next{
+  display: none;
+}
+.ui-datepicker-calendar{
+  background-color:  #494949; 
+  border:2px solid red;
+  
+  
+
+  
+}
+.ui-datepicker-month{
+  background-color: #494949; 
+  color:white;
+  border:2px solid red;
+  
+}
+.ui-datepicker-year{
+  background-color: #494949; 
+  color:white;
+  border:2px solid red;
+  
+}
+
+.ui-state-default{
+	color: white;
+	font-weight: bold;
+}
+
+
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  height: auto;
+}
+table th{
+  text-align: left;
+  background-color: #494949;
+  color: #fff;
+  padding: 4px 30px 4px 8px;
+}
+table td {
+  border: 1px solid #e3e3e3;
+  padding: 4px 8px;
+}
+table tr:nth-child(odd) td {
+  background-color: rgb(204,0,0);
+}
+
+
+.formBack{
+	background-image: url('../img/formback.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#genderForm{
+	font-size: 20px;
+	border:2px solid red; 
+	border-radius: 12px;S
+	width: 100%; 
+	padding: 15px; 
+	margin: 0px 0px 10px  0px;
+	background-color: rgba(255,255,255,0.9);
+}
