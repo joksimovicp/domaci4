@@ -43,12 +43,12 @@ const staticAssets = [
 //   '/img/twit.png',
 //   '/offline.html',
 //   '/css/animate.css',
-]
+];
 
 this.addEventListener('install', function (event) {
   event.waitUntil(
     caches.open('static-assets').then(cache => {
-      return cache.addAll(staticAssets)
+      return cache.addAll('/index.html')
     })
   )
 })
