@@ -48,7 +48,8 @@ const staticAssets = [
   'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/fonts/glyphicons-halflings-regular.woff2',
   'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css',
   'https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js',
-  'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'
+  'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js',
+  'https://code.jquery.com/ui/1.12.1/jquery-ui.js',
 ];
 
 this.addEventListener('install', function (event) {
