@@ -45,6 +45,7 @@ const staticAssets = [
   './css/animate.css',
   './js/offlineMode.js',
   './manifest.js',
+  './css/font-awesome.min.css',
   'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/fonts/glyphicons-halflings-regular.woff2',
   'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css',
   'https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js',
