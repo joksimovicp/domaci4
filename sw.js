@@ -50,7 +50,7 @@ this.addEventListener('install', function (event) {
     caches.open('static-assets').then(cache => {
       return cache.addAll(staticAssets)
     }).catch(function(message){
-      console.log('err1', message);
+      console.log('Error opening cache', message);
       
     })
   )
@@ -65,7 +65,12 @@ this.addEventListener('fetch', function (event) {
           return response
         })
       }).catch(() => {
-        console.log('Fetch failed');
+         console.log('Fetch failed; returning offline page instead.');
+        return caches.open('static-assets').then(function (cache) {
+          cache.match('offlne.html').then(function (cachedResponse) {
+            return cachedResponse
+          })
+        });
      
       })
     })
