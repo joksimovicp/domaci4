@@ -43,6 +43,12 @@ const staticAssets = [
   './img/twit.png',
   './offline.html',
   './css/animate.css',
+  './js/offlineMode.js',
+  './manifest.js',
+  'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/fonts/glyphicons-halflings-regular.woff2',
+  'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css',
+  'https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js',
+  'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'
 ];
 
 this.addEventListener('install', function (event) {
