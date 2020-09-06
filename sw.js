@@ -43,7 +43,6 @@ const staticAssets = [
   '/img/twit.png',
   '/offline.html',
   '/css/animate.css',
-  '/css/bootstrap.css.map'
 ]
 
 this.addEventListener('install', function (event) {
@@ -63,12 +62,8 @@ this.addEventListener('fetch', function (event) {
           return response
         })
       }).catch(() => {
-        console.log('Fetch failed; returning offline page instead.');
-        return caches.open('static-assets').then(function (cache) {
-          cache.match('offlne.html').then(function (cachedResponse) {
-            return cachedResponse
-          })
-        });
+        console.log('Fetch failed');
+     
       })
     })
   )
