@@ -49,6 +49,9 @@ this.addEventListener('install', function (event) {
   event.waitUntil(
     caches.open('static-assets').then(cache => {
       return cache.addAll(['/index.html'])
+    }).catch(function(message){
+      console.log('err1', message);
+      
     })
   )
 })
